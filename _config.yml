@@ -1,0 +1,44 @@
+# Site settings
+title: dwinurhadia
+description: 'stay learn, stay cool'
+url: 'dwinurhadia.github.io'
+baseurl: '/jekyll-uno'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+#thanks to
+author:
+  name: 'dwinurhadia'
+  email: dwi.nurhadi17@gmail.com
+  twitter_username: beebazz
+  facebook_username: bee.bazz.3
+  github_username:  dwinurhadia
+  linkedin_username:  dwi-nurhadi-afriyanto
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
